@@ -1,48 +1,124 @@
-{"intents": [
-    {"tag": "saudacao",
-        "patterns": ["Ola!!", "Como voce esta?", "Tem alguem ai?","Oi","Oie", "Alo"],
-        "responses": ["Ola!!, obrigado por perguntar.", "Que bom ver voce novamente.","Ola, como posso ajudar?"]
+{
+  "intents": [
+    {
+      "tag": "saudacao",
+      "patterns": ["Ola!!", "Como voce esta?", "Tem alguem ai?", "Oi", "Oie", "Alo", "E ai?", "Tudo bem?", "Bom dia", "Boa tarde", "Boa noite", "Oi, tudo tranquilo?", "Oi, como voce esta hoje?"],
+      "responses": ["Ola!!, obrigado por perguntar.", "Que bom ver voce novamente.", "Ola, como posso ajudar?", "Oi! Como posso ser util?", "E ai, tudo tranquilo?", "Bom dia! Como posso ajudar?"]
     },
-    {"tag": "despedida",
-        "patterns": ["Tchau", "Nos vemos depois", "Adeus", "Foi bom falar com voce, tchau","Ate a proxima"],
-        "responses": ["Nos vemos!", "Tenha um otimo dia", "Tchau! Volte logo."] 
+    {
+      "tag": "despedida",
+      "patterns": ["Tchau", "Nos vemos depois", "Adeus", "Foi bom falar com voce, tchau", "Ate a proxima", "Ate logo", "Adeus, amigo", "Tchauzinho", "Ate breve", "Adeus, tenha um otimo dia", "Adeus, ate logo", "Ate mais tarde"],
+      "responses": ["Nos vemos!", "Tenha um otimo dia", "Tchau! Volte logo.", "Adeus, ate breve!", "A proxima vez sera ainda melhor!", "Adeus, amigo!", "Adeus, tenha um otimo dia!", "Ate mais tarde!"]
     },
-    {"tag": "agradecimento",
-        "patterns": ["Obrigado!", "Muito obrigado.", "Isso foi util", "Maravilha, obrigado!", "Obrigado por me ajudar!"],
-        "responses": ["Fico feliz em ajudar!", "Sempre que precisar", "Foi um prazer."]
+    {
+      "tag": "agradecimento",
+      "patterns": ["Obrigado!", "Muito obrigado.", "Isso foi util", "Maravilha, obrigado!", "Obrigado por me ajudar!", "Gratidao", "Fico agradecido", "Agradeco muito", "Muito obrigado por sua ajuda", "Agradecido por isso"],
+      "responses": ["Fico feliz em ajudar!", "Sempre que precisar", "Foi um prazer.", "Estou aqui para ajudar!", "De nada, sempre a disposicao!", "Nao ha de que!", "E um prazer poder ajudar!"]
     },
-    {"tag": "sem_resposta",
-        "patterns": [""],
-        "responses": ["Desculpe, nao consegui entender voce.", "Por favor de-me mais informacoes.", "Acho que nao entendi."]
+    {
+      "tag": "sem_resposta",
+      "patterns": ["Nao entendo", "O que?", "Pode repetir?", "Nao sei", "Confuso", "Explique melhor", "Nao compreendo", "Preciso de esclarecimento", "Nao consigo entender", "Fale mais devagar", "Nao apanho", "Pode ser mais claro?"],
+      "responses": ["Desculpe, nao consegui entender voce.", "Por favor, reformule sua pergunta.", "Parece que houve um problema de comunicacao.", "Vamos tentar novamente.", "Acho que nao entendi. Pode elaborar?"]
     },
-    {"tag": "opcoes",
-     "patterns": ["Estou entediado hoje!", "O que voce pode fazer?",
-                "Nao sei o que fazer", "Que ajuda voce oferece?",
-                "Como voce pode ser util?", "Que suporte e oferecido"],
-     "responses": ["Posso orientar voce em uma atividade para passar o dia. Qual e o seu hobby?",
-                   "Podemos planejar uma atividade diaria. O que voce gostaria de fazer?"]
+    {
+      "tag": "opcoes",
+      "patterns": ["Estou entediado hoje!", "O que voce pode fazer?", "Nao sei o que fazer", "Que ajuda voce oferece?", "Como voce pode ser util?", "Que suporte e oferecido", "Quero algo divertido para fazer", "Preciso de ideias", "Estou a toa hoje", "Quero algo emocionante"],
+      "responses": ["Posso orientar voce em uma atividade para passar o dia. Qual e o seu hobby?", "Podemos planejar uma atividade diaria. O que voce gostaria de fazer?", "Vamos encontrar algo divertido para voce!", "Nao se preocupe, estou aqui para ajudar.", "A criatividade e o limite quando se trata de diversao!"]
     },
-    {"tag": "arte",
-        "patterns": ["Gosto de arte", "Gosto de artesanato", "arte e artesanato", "desenho", "retrato", "pintura"],
-        "responses": ["Voce pode desenhar uma arte geometrica e colori-la!!","Voce pode esbocar um cenario hoje.",
-                      "Experimente a arte da Mandala pontilhada hoje!"]
+    {
+      "tag": "arte",
+      "patterns": ["Gosto de arte", "Gosto de artesanato", "arte e artesanato", "desenho", "retrato", "pintura", "Arte abstrata", "Arte contemporanea", "Escultura", "Arte digital", "Arte urbana", "Arte visual"],
+      "responses": ["Voce pode desenhar uma arte geometrica e colori-la!!", "Voce pode esbocar um cenario hoje.", "Experimente a arte da Mandala pontilhada hoje!", "A arte e uma forma maravilhosa de expressao.", "A criatividade artistica e ilimitada!"]
     },
-    {"tag": "musica",
-        "patterns": ["Eu gosto de musica", "Eu gosto de cancoes", "cancoes e musica", "pop"],
-        "responses": ["Voce pode ouvir musicas na radio FM",
-                     "Voce pode gravar um video para postar num site da rede social"]
+    {
+      "tag": "musica",
+      "patterns": ["Eu gosto de musica", "Eu gosto de cancoes", "cancoes e musica", "pop", "Rock", "Classica", "Hip-hop", "Jazz", "Eletronica", "Indie", "Rap", "Reggae"],
+      "responses": ["Voce pode ouvir musicas na radio FM", "Voce pode gravar um video para postar num site da rede social", "A musica e a linguagem universal.", "A musica e uma excelente forma de expressar emocoes."]
     },
-   
-    {"tag": "culinaria",
-            "patterns": ["Eu gosto de cozinhar", "Eu gosto de assar", "comer pizza", "cozinhar", "comida"],
-            "responses": ["Voce pode tentar fazer um bolo hoje!","Voce pode assar uma pizza hoje"]},
-     
-    {"tag": "fitness",
-        "patterns": ["Gosto de fazer exercicios", "Gosto de aerobica", "exercicio"],
-        "responses": ["Voce pode tentar dancar zumba hoje!","Voce pode tentar pilates hoje"]},
-
-    {"tag": "viagem",
-        "patterns": ["Gosto de viajar", "Gosto de explorar lugares diferentes", "viajar"],
-        "responses": ["Voce pode visitar um zoológico hoje!","Voce pode visitar um parque de diversoes hoje"]}         
-]}
-
+    {
+      "tag": "culinaria",
+      "patterns": ["Eu gosto de cozinhar", "Eu gosto de assar", "comer pizza", "cozinhar", "comida", "Receitas", "Chef em casa", "Gastronomia", "Comida caseira", "Gourmet", "Alimentacao saudavel", "Pratos internacionais"],
+      "responses": ["Voce pode tentar fazer um bolo hoje!", "Voce pode assar uma pizza hoje", "A culinaria e uma forma deliciosa de explorar diferentes sabores.", "Cozinhar e uma arte em si."]
+    },
+    {
+      "tag": "fitness",
+      "patterns": ["Gosto de fazer exercicios", "Gosto de aerobica", "exercicio", "Corrida", "Yoga", "Musculacao", "Caminhada", "Natacao", "Esportes ao ar livre", "Treino de alta intensidade", "Pilates", "Alongamento"],
+      "responses": ["Voce pode tentar dancar zumba hoje!", "Voce pode tentar pilates hoje", "Manter-se ativo e essencial para a saude.", "O exercicio regular ajuda a manter o corpo e a mente saudaveis."]
+    },
+    {
+      "tag": "viagem",
+      "patterns": ["Gosto de viajar", "Gosto de explorar lugares diferentes", "viajar", "Destinos exoticos", "Mochilao", "Ferias", "Aventura", "Cultura", "Viagem solo", "Viagem em grupo", "Viagem de luxo", "Viagem de aventura"],
+      "responses": ["Voce pode visitar um zoológico hoje!", "Voce pode visitar um parque de diversoes hoje", "Viajar e uma das melhores formas de aprender sobre o mundo.", "Cada viagem e uma aventura unica."]
+    },
+    {
+      "tag": "games",
+      "patterns": ["Eu amo jogar video games", "Gosto de jogos de tabuleiro", "Jogos eletronicos", "Vamos jogar um jogo?", "Qual e o seu jogo favorito?", "Multiplayer", "RPG", "Estrategia", "Acao", "Simulacao", "Jogos de cartas", "Jogos de quebra-cabeca"],
+      "responses": ["Que tal jogar um jogo de tabuleiro com amigos?", "Experimente um novo jogo eletronico que voce nunca jogou antes!", "Os jogos sao uma otima maneira de se divertir e relaxar.", "Jogar com amigos pode ser ainda mais divertido!"]
+    },
+    {
+      "tag": "pesca",
+      "patterns": ["Gosto de pescar", "Pesca esportiva", "Onde posso pescar?", "Qual e o seu peixe favorito?", "Pesca no rio", "Vara de pesca", "Isca", "Pesca noturna", "Dicas de pesca", "Pesca em alto mar", "Pesca de trutas", "Pesca de carpas"],
+      "responses": ["A pesca e uma otima maneira de se conectar com a natureza e relaxar.", "Voce pode experimentar a pesca em um lago local.", "Lembre-se de levar sua vara de pescar e iscas!", "A paciencia e a chave para o sucesso na pesca."]
+    },
+    {
+      "tag": "esportes",
+      "patterns": ["Gosto de esportes", "Eu pratico esportes", "Qual e o seu esporte favorito?", "Assistir a jogos de futebol", "Esportes radicais", "Equipe favorita", "Atletismo", "Esportes de inverno", "Esportes de raquete", "Esportes aquaticos", "Esportes de combate", "Esportes de equipe"],
+      "responses": ["O esporte e uma otima maneira de manter-se ativo e saudavel.", "Voce pode jogar um jogo de basquete com amigos.", "Que tal assistir a um jogo de futebol no proximo final de semana?", "Praticar esportes e uma otima maneira de manter a forma."]
+    },
+    {
+      "tag": "tecnologia",
+      "patterns": ["Eu sou um entusiasta de tecnologia", "Gosto de gadgets", "Qual e o seu dispositivo favorito?", "Tecnologia do futuro", "Smartphones", "Tendencias tecnologicas", "Programacao", "Inovacao", "Computadores", "Internet das coisas", "Inteligencia artificial", "Realidade virtual"],
+      "responses": ["A tecnologia esta sempre evoluindo, e sempre ha algo novo para explorar.", "Voce pode aprender a programar um aplicativo simples.", "Discutir tecnologia e uma otima maneira de ficar atualizado.", "A tecnologia esta moldando o nosso futuro."]
+    },
+    {
+      "tag": "cinema",
+      "patterns": ["Gosto de filmes", "Cinema", "Filmes de acao", "Quem e seu ator favorito?", "Filmes classicos", "Industria cinematografica", "Premiacoes de cinema", "Diretor de cinema", "Filmes de terror", "Comedias", "Filmes de super-herois", "Filmes de ficcao cientifica"],
+      "responses": ["Os filmes sao uma otima forma de entretenimento.", "Voce pode planejar uma noite de cinema com amigos.", "Quem e seu diretor de cinema favorito?", "Os filmes podem nos transportar para outros mundos."]
+    },
+    {
+      "tag": "literatura",
+      "patterns": ["Eu amo ler livros", "Literatura", "Livros de fantasia", "Qual e o seu autor favorito?", "Recomende um livro", "Clube do livro", "Biblioteca", "Escrita criativa", "Poesia", "Romances historicos", "Ficcao cientifica", "Livros de nao-ficcao"],
+      "responses": ["A leitura e uma maneira maravilhosa de viajar para outros mundos.", "Voce pode juntar um clube do livro local.", "Um livro que eu recomendaria e '1984' de George Orwell.", "A literatura enriquece a mente."]
+    },
+    {
+      "tag": "saude",
+      "patterns": ["Como posso manter uma vida saudavel?", "Dicas de saude", "Exercicios para ficar em forma", "Dieta equilibrada", "Saude mental", "Bem-estar", "Medicina natural", "Consultar um medico", "Cuidados com a saude"],
+      "responses": ["Manter uma vida saudavel envolve uma alimentacao balanceada e exercicios regulares.", "A saude mental e tao importante quanto a saude fisica.", "Nao deixe de consultar um profissional de saude regularmente.", "O autocuidado e fundamental para a sua saude."]
+    },
+    {
+      "tag": "automoveis",
+      "patterns": ["Carros", "Manutencao de automoveis", "Dicas de direcao", "Automoveis eletricos", "Marcas de automoveis", "Escolhendo um carro", "Seguranca no transito", "Passeios de carro", "Dirigir com seguranca"],
+      "responses": ["A manutencao regular e importante para a durabilidade do seu carro.", "Os automoveis eletricos estao se tornando cada vez mais populares.", "Escolher o carro certo depende das suas necessidades e orcamento.", "Lembre-se sempre de dirigir com seguranca no transito."]
+    },
+    {
+      "tag": "moda",
+      "patterns": ["Tendencias de moda", "Estilo pessoal", "Roupas e acessorios", "Dicas de vestuario", "Marcas de moda", "Compras de roupas", "Moda sustentavel", "Moda masculina", "Moda feminina"],
+      "responses": ["A moda e uma forma de expressar sua personalidade.", "Siga as tendencias de moda que combinam com o seu estilo pessoal.", "A moda sustentavel esta ganhando destaque, escolha marcas conscientes.", "Nao importa o genero, a moda e uma forma de autoexpressao."]
+    },
+    {
+      "tag": "ciencia",
+      "patterns": ["Ciencia e descobertas", "Exploracao espacial", "Avancos cientificos", "Curiosidades cientificas", "Campo da ciencia", "Biologia", "Astronomia", "Quimica", "Fisica", "Ciencia e tecnologia", "Pesquisas cientificas"],
+      "responses": ["A ciencia esta constantemente fazendo novas descobertas e avancos.", "A exploracao espacial e uma das fronteiras finais da ciencia.", "A curiosidade e o motor da pesquisa cientifica.", "A ciencia e a base de muitos avancos tecnologicos."]
+    },
+    {
+      "tag": "financas",
+      "patterns": ["Gestao financeira", "Investimentos", "Economia pessoal", "Poupanca", "Planejamento financeiro", "Financas pessoais", "Mercado de acoes", "Dicas financeiras", "Orçamento", "Empreendedorismo", "Dinheiro"],
+      "responses": ["O planejamento financeiro e fundamental para alcancar seus objetivos financeiros.", "Investir sabiamente pode ajudar a construir riqueza ao longo do tempo.", "Mantenha um orcamento para controlar suas despesas.", "O empreendedorismo pode ser uma maneira de buscar independencia financeira."]
+    },
+    {
+      "tag": "educacao",
+      "patterns": ["Educacao online", "Aprendizado continuo", "Dicas de estudo", "Cursos online", "Educacao a distancia", "Educacao superior", "Tutoriais educacionais", "Aprender algo novo", "Desenvolvimento pessoal"],
+      "responses": ["A educacao online oferece acesso a uma variedade de cursos e recursos educacionais.", "Aprender algo novo pode ser uma experiencia gratificante.", "O desenvolvimento pessoal e uma jornada continua.", "A educacao e a chave para o crescimento pessoal."]
+    },
+    {
+      "tag": "animais",
+      "patterns": ["Amo animais", "Adocao de animais de estimacao", "Cuidados com animais de estimacao", "Animais selvagens", "Zoologia", "Animais exóticos", "Conservacao animal", "Veterinaria", "Curiosidades sobre animais"],
+      "responses": ["Os animais de estimacao sao parte da nossa familia e merecem cuidados adequados.", "A conservacao dos animais selvagens e importante para a biodiversidade.", "Os veterinarios desempenham um papel crucial na saude dos animais.", "Conhecer curiosidades sobre animais pode ser fascinante."]
+    },
+    {
+      "tag": "politica",
+      "patterns": ["Noticias politicas", "Participacao politica", "Sistemas politicos", "Eleicoes", "Questoes sociais", "Governanca", "Engajamento politico", "Politica internacional", "Partidos politicos", "Tomada de decisao politica"],
+      "responses": ["A politica tem um impacto profundo na sociedade e na governanca.", "O envolvimento politico e importante para moldar o futuro do pais.", "Entender os sistemas politicos ajuda a tomar decisoes informadas.", "A politica internacional desempenha um papel significativo nas relacoes globais."]
+    }
+  ]
+}
